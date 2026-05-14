@@ -20,8 +20,6 @@ public static class PresenceCore
         ModId = mod.Info.ModID;
         
         Config = new PresenceConfig();
-        
-        Log.Debug("Initialized PresenceCore");
     }
 
     public static void InitializeClient(ICoreClientAPI capi)

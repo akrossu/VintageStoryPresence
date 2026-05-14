@@ -18,7 +18,6 @@ public static class PresenceFunctionRegistry
         if (Map.TryGetValue(key, out var func))
         {
             value = func(ctx);
-            PresenceCore.Log.Notification("Presence found: " + key);
             return true;
         }
 
