@@ -5,15 +5,15 @@ namespace VintageStoryPresence.Common.Services;
 
 public static class DiscordRpcService
 {
-    private static DiscordRpcClient? _client;
-    private static bool IsReady => _client?.IsInitialized == true;
+    private static DiscordRpcClient? _discordRpcClient;
+    private static bool IsReady => _discordRpcClient?.IsInitialized == true;
     
     public static void InitializeDiscordRpc(string appId)
     {
         try
         {
-            _client = new DiscordRpcClient(appId);
-            _client.Initialize();
+            _discordRpcClient = new DiscordRpcClient(appId);
+            _discordRpcClient.Initialize();
         }
         catch (Exception e)
         {
@@ -29,13 +29,13 @@ public static class DiscordRpcService
             return;
         }
 
-        _client!.SetPresence(presence);
+        _discordRpcClient!.SetPresence(presence);
     }
 
     public static void Dispose()
     {
-        _client?.Dispose();
-        _client = null;
+        _discordRpcClient?.Dispose();
+        _discordRpcClient = null;
         PresenceCore.Log.Debug("DiscordRpc Client Disposed");
     }
 }
