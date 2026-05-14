@@ -9,6 +9,9 @@ public static class PresenceCommands
 
         PresenceFunctionRegistry.Register("PlayerCount",
             ctx => ctx.PlayerCount);
+        
+        PresenceFunctionRegistry.Register("PlayerCountFormatted",
+            ctx => ctx.PlayerCountFormatted);
 
         PresenceFunctionRegistry.Register("ServerName",
             ctx => ctx.ServerName);
@@ -16,6 +19,12 @@ public static class PresenceCommands
         PresenceFunctionRegistry.Register("WorldName",
             ctx => ctx.WorldName);
 
+        PresenceFunctionRegistry.Register("PlayerMode",
+            ctx => ctx.PlayerMode);
+        
+        PresenceFunctionRegistry.Register("PlayerModeFormatted",
+            ctx => ctx.PlayerModeFormatted);
+        
         PresenceFunctionRegistry.Register("GameMode",
             ctx => ctx.GameMode);
     }

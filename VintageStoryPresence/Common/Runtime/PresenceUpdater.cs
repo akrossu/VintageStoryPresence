@@ -2,7 +2,6 @@
 using DiscordRPC;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
-using VintageStoryPresence.Common.Config;
 using VintageStoryPresence.Common.Presence;
 using VintageStoryPresence.Common.Services;
 
@@ -44,6 +43,7 @@ public static class PresenceUpdater
         
         int onlinePlayers = world?.AllOnlinePlayers?.Length ?? 0;
         bool isSinglePlayer = capi?.IsSinglePlayer ?? false;
+        string currentGameMode = capi?.World.Player.WorldData.CurrentGameMode.ToString() ?? "no game";
         
         return new PresenceContext
         {
@@ -51,12 +51,16 @@ public static class PresenceUpdater
             
             PlayerName = "Player Name",
             
-            PlayerCount = (onlinePlayers == 1) ? "1 Player Online" : $"{onlinePlayers} Players Online",
+            PlayerCount = onlinePlayers.ToString(),
+            PlayerCountFormatted = onlinePlayers > 1 ? $"with {onlinePlayers} others" : $"with {onlinePlayers} other",
 
             ServerName = "Server Name",
             WorldName = "World Name",
             
-            GameMode = isSinglePlayer ? "Singleplayer" : "Multiplayer"
+            PlayerMode = isSinglePlayer ? "Solo" : "Online",
+            PlayerModeFormatted = isSinglePlayer ? "Solo" : onlinePlayers > 1 ? $"with {onlinePlayers} others" : $"with {onlinePlayers} other",
+            
+            GameMode = currentGameMode
         };
     }
     
