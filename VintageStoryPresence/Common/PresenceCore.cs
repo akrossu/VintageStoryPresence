@@ -1,4 +1,5 @@
-﻿using Vintagestory.API.Common;
+﻿using Vintagestory.API.Client;
+using Vintagestory.API.Common;
 using VintageStoryPresence.Common.Config;
 
 namespace VintageStoryPresence.Common;
@@ -6,6 +7,7 @@ namespace VintageStoryPresence.Common;
 public static class PresenceCore
 {
     public static ICoreAPI Api { get; private set; } = null!;
+    public static ICoreClientAPI Capi { get; private set; } = null!;
     public static ILogger Log { get; private set; } = null!;
     public static string ModId { get; private set; } = null!;
 
@@ -20,5 +22,10 @@ public static class PresenceCore
         Config = new PresenceConfig();
         
         Log.Debug("Initialized PresenceCore");
+    }
+
+    public static void InitializeClient(ICoreClientAPI capi)
+    {
+        Capi = capi;
     }
 }

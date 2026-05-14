@@ -21,6 +21,7 @@ public class VintageStoryPresenceModSystem : ModSystem
     {
         base.StartClientSide(capi);
         
+        PresenceCore.InitializeClient(capi);
         DiscordRpcService.InitializeDiscordRpc(PresenceCore.Config.AppId);
         
         PresenceUpdater.Start();
