@@ -2,6 +2,7 @@
 using Vintagestory.API.Common;
 using VintageStoryPresence.Common;
 using VintageStoryPresence.Common.Patches;
+using VintageStoryPresence.Common.Presence;
 using VintageStoryPresence.Common.Runtime;
 using VintageStoryPresence.Common.Services;
 
@@ -20,8 +21,9 @@ public class VintageStoryPresenceModSystem : ModSystem
     public override void StartClientSide(ICoreClientAPI capi)
     {
         base.StartClientSide(capi);
-        
+
         PresenceCore.InitializeClient(capi);
+        PresenceCommands.RegisterDefaults();
         DiscordRpcService.InitializeDiscordRpc(PresenceCore.Config.AppId);
         
         PresenceUpdater.Start();
