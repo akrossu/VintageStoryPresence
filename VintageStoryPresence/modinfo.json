@@ -1,0 +1,16 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "vintagestorypresence",
+    "name": "Vintage Story Discord RPC",
+    "authors": [
+        "akross"
+    ],
+    "description": "Show your game activity with Discord Rich Presence",
+    "version": "0.0.1",
+    "side": "Client",
+    "requiredOnServer": false,
+    "dependencies": {
+        "game": "1.22.2"
+    }
+}

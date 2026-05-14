@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CakeBuild", "CakeBuild\CakeBuild.csproj", "{DC5AB04D-928E-4A49-A952-2A6008DBD73D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VintageStoryPresence", "VintageStoryPresence\VintageStoryPresence.csproj", "{63FF2938-E0A2-4423-BDC9-BB3EF584FAF7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC5AB04D-928E-4A49-A952-2A6008DBD73D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5AB04D-928E-4A49-A952-2A6008DBD73D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5AB04D-928E-4A49-A952-2A6008DBD73D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5AB04D-928E-4A49-A952-2A6008DBD73D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63FF2938-E0A2-4423-BDC9-BB3EF584FAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63FF2938-E0A2-4423-BDC9-BB3EF584FAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63FF2938-E0A2-4423-BDC9-BB3EF584FAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63FF2938-E0A2-4423-BDC9-BB3EF584FAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

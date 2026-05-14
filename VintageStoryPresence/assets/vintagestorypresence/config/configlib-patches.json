@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "settings": [
+    {
+      "code": "patch-app-id",
+      "name": "AppId",
+      "type": "string",
+      "default": "1441987315235946546",
+      "comment": "patch-app-id-comment"
+    },
+    {
+      "code": "patch-details",
+      "name": "Details",
+      "type": "string",
+      "default": "Patch Details",
+      "comment": "patch-details-comment"
+    },
+    {
+      "code": "patch-state",
+      "name": "State",
+      "type": "string",
+      "default": "Patch State",
+      "comment": "patch-state-comment"
+    }
+  ]
+}
