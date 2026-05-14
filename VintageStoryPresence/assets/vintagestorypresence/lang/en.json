@@ -1,8 +1,8 @@
 {
     "AppId": "Application Id",
     "patch-app-id-comment": "Discord registered Application Id",
-    "Details": "Activity Detail",
+    "Details": "In {GameMode} Mode",
     "patch-details-comment": "Select from PlayerMode, ServerName, or WorldName",
-    "State": "Activity State",
+    "State": "Playing {PlayerModeFormatted}",
     "patch-state-comment": "Select from PlayerState, OnlineStatus"
 }
