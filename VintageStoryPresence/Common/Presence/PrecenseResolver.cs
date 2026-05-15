@@ -2,13 +2,17 @@
 
 namespace VintageStoryPresence.Common.Presence;
 
-public static class PresenceResolver
+public static partial class PresenceResolver
 {
-    private static readonly Regex PlaceholderRegex = new Regex(@"\{(.*?)\}", RegexOptions.Compiled);
+    private static readonly Regex PlaceholderRegex = MyRegex();
     
     public static string? Resolve(string command, PresenceContext context)
     {
         if (string.IsNullOrWhiteSpace(command)) return string.Empty;
+        
+        command = command
+            .Replace("{{", "{")
+            .Replace("}}", "}");
         
         return PlaceholderRegex.Replace(command, match =>
         {
@@ -17,8 +21,16 @@ public static class PresenceResolver
             if (PresenceFunctionRegistry.TryResolve(key, context, out string? value))
                 return value ?? string.Empty;
 
-            // raw text fallback
-            return match.Value;
+            /*
+             * raw text fallback
+             * preserves unkown placeholders as literals
+             * that way downstream string.Format doesn't
+             * attempt to parse them
+             */
+            return "{{" + key + "}}";
         });
     }
+
+    [GeneratedRegex(@"(?<!\{)\{(.*?)}(?!})", RegexOptions.Compiled)]
+    private static partial Regex MyRegex();
 }
