@@ -13,11 +13,11 @@ public static class PresenceFunctionRegistry
         PresenceCore.Log.Notification("Registered " + key);
     }
 
-    public static bool TryResolve(string key, PresenceContext ctx, out string? value)
+    public static bool TryResolve(string key, PresenceContext context, out string? value)
     {
         if (Map.TryGetValue(key, out var func))
         {
-            value = func(ctx);
+            value = func(context);
             return true;
         }
 

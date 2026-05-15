@@ -5,27 +5,27 @@ public static class PresenceCommands
     public static void RegisterDefaults()
     {
         PresenceFunctionRegistry.Register("PlayerName",
-            ctx => ctx.PlayerName);
+            context => context.PlayerName);
 
         PresenceFunctionRegistry.Register("PlayerCount",
-            ctx => ctx.PlayerCount);
+            context => context.PlayerCount);
         
         PresenceFunctionRegistry.Register("PlayerCountFormatted",
-            ctx => ctx.PlayerCountFormatted);
+            context => context.PlayerCountFormatted);
 
         PresenceFunctionRegistry.Register("ServerName",
-            ctx => ctx.ServerName);
+            context => context.ServerName);
 
         PresenceFunctionRegistry.Register("WorldName",
-            ctx => ctx.WorldName);
+            context => context.WorldName);
 
         PresenceFunctionRegistry.Register("PlayerMode",
-            ctx => ctx.PlayerMode);
+            context => context.PlayerMode);
         
         PresenceFunctionRegistry.Register("PlayerModeFormatted",
-            ctx => ctx.PlayerModeFormatted);
+            context => context.PlayerModeFormatted);
         
         PresenceFunctionRegistry.Register("GameMode",
-            ctx => ctx.GameMode);
+            context => context.GameMode);
     }
 }
