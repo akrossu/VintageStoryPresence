@@ -35,7 +35,8 @@ The intent with this mod was to simplify both the user experience and developer 
 
 > This mod uses the [Discord RPC package](https://www.nuget.org/packages/DiscordRPC-NativeAOT) NuGet package, which all crossplatform compatability layering. If there are any platform compatability problems, please create an issue [here](https://github.com/samse1337/DiscordRPC-NativeAOT/issues?q=sort%3Aupdated-desc%20is%3Aissue%20is%3Aopen%20).
 
-## Developers
+<details>
+  <summary><h2>For Developers</h2></summary>
 
 ### Registering new commands
 
@@ -79,4 +80,5 @@ public static class PresenceContextBuilder
         }
     }
 }
-```
+```  
+</details>
