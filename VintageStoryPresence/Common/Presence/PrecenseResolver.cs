@@ -6,7 +6,7 @@ public static class PresenceResolver
 {
     private static readonly Regex PlaceholderRegex = new Regex(@"\{(.*?)\}", RegexOptions.Compiled);
     
-    public static string? Resolve(string command, PresenceContext ctx)
+    public static string? Resolve(string command, PresenceContext context)
     {
         if (string.IsNullOrWhiteSpace(command)) return string.Empty;
         
@@ -14,7 +14,7 @@ public static class PresenceResolver
         {
             string key = match.Groups[1].Value;
 
-            if (PresenceFunctionRegistry.TryResolve(key, ctx, out string? value))
+            if (PresenceFunctionRegistry.TryResolve(key, context, out string? value))
                 return value ?? string.Empty;
 
             // raw text fallback
