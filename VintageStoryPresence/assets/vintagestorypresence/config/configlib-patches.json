@@ -12,15 +12,43 @@
       "code": "patch-details",
       "name": "Details",
       "type": "string",
-      "default": "Patch Details",
+      "default": "In {{GameMode}} Mode",
       "comment": "patch-details-comment"
     },
     {
       "code": "patch-state",
       "name": "State",
       "type": "string",
-      "default": "Patch State",
+      "default": "Playing {{PlayerModeFormatted}}",
       "comment": "patch-state-comment"
+    },
+    {
+      "code": "large-image-key",
+      "name": "LargeImageKey",
+      "type": "string",
+      "default": "game_icon",
+      "comment": ""
+    },
+    {
+      "code": "large-image-text",
+      "name": "LargeImageText",
+      "type": "string",
+      "default": "Large Image Text Hover",
+      "comment": ""
+    },
+    {
+      "code": "small-image-key",
+      "name": "SmallImageKey",
+      "type": "string",
+      "default": "gear_icon",
+      "comment": ""
+    },
+    {
+      "code": "small-image-text",
+      "name": "SmallImageText",
+      "type": "string",
+      "default": "Small Image Text Hover",
+      "comment": ""
     }
   ]
 }
