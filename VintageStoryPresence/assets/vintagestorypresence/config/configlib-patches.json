@@ -2,13 +2,6 @@
   "version": 2,
   "settings": [
     {
-      "code": "patch-app-id",
-      "name": "AppId",
-      "type": "string",
-      "default": "1441987315235946546",
-      "comment": "patch-app-id-comment"
-    },
-    {
       "code": "patch-details",
       "name": "Details",
       "type": "string",
@@ -21,6 +14,24 @@
       "type": "string",
       "default": "Playing {{PlayerModeFormatted}}",
       "comment": "patch-state-comment"
+    },
+    {
+      "type": "separator",
+      "title": "Advanced Settings"
+    },
+    {
+      "code": "custom-app-id-toggle",
+      "name": "AppIdToggle",
+      "type": "boolean",
+      "default": false,
+      "comment": "Toggle on to allow custom discord application id's. If off, will use the default game application."
+    },
+    {
+      "code": "app-id",
+      "name": "AppId",
+      "type": "string",
+      "default": "1441987315235946546",
+      "comment": "patch-app-id-comment"
     },
     {
       "code": "large-image-key",
@@ -37,10 +48,17 @@
       "comment": ""
     },
     {
+      "code": "large-image-url",
+      "name": "LargeImageUrl",
+      "type": "string",
+      "default": "https://www.vintagestory.at/",
+      "comment": ""
+    },
+    {
       "code": "small-image-key",
       "name": "SmallImageKey",
       "type": "string",
-      "default": "gear_icon",
+      "default": "temp_gear_icon",
       "comment": ""
     },
     {
@@ -48,6 +66,13 @@
       "name": "SmallImageText",
       "type": "string",
       "default": "Small Image Text Hover",
+      "comment": ""
+    },
+    {
+      "code": "small-image-url",
+      "name": "SmallImageUrl",
+      "type": "string",
+      "default": "https://mods.vintagestory.at/vintagestorypresence",
       "comment": ""
     }
   ]
