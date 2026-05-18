@@ -25,8 +25,12 @@ public class VintageStoryPresenceModSystem : ModSystem
 
         PresenceCore.InitializeClient(capi);
         PresenceCommands.RegisterDefaults();
-        DiscordRpcService.InitializeDiscordRpc(ConfigManager.Config.AppId);
-        
+
+        // Checks when ConfigLib has enabled the AppIdToggle
+        DiscordRpcService.InitializeDiscordRpc(ConfigManager.Config.AppIdToggle
+            ? ConfigManager.Config.AppId
+            : "1441987315235946546");
+
         PresenceUpdater.Start();
     }
 
