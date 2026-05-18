@@ -1,6 +1,7 @@
 ﻿using Vintagestory.API.Client;
 using Vintagestory.API.Common;
 using VintageStoryPresence.Common;
+using VintageStoryPresence.Common.Config;
 using VintageStoryPresence.Common.Patches;
 using VintageStoryPresence.Common.Presence;
 using VintageStoryPresence.Common.Runtime;
@@ -24,7 +25,7 @@ public class VintageStoryPresenceModSystem : ModSystem
 
         PresenceCore.InitializeClient(capi);
         PresenceCommands.RegisterDefaults();
-        DiscordRpcService.InitializeDiscordRpc(PresenceCore.Config.AppId);
+        DiscordRpcService.InitializeDiscordRpc(ConfigManager.Config.AppId);
         
         PresenceUpdater.Start();
     }
