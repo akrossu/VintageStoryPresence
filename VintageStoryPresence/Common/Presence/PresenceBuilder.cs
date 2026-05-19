@@ -10,7 +10,10 @@ public static class PresenceBuilder
         return new RichPresence
         {
             Details = PresenceResolver.Resolve(ConfigManager.Config.Details, context) ?? ConfigManager.Config.Details,
+            DetailsUrl = PresenceResolver.Resolve(ConfigManager.Config.DetailsUrl, context) ?? ConfigManager.Config.Details,
+            
             State = PresenceResolver.Resolve(ConfigManager.Config.State, context) ?? ConfigManager.Config.State,
+            StateUrl = PresenceResolver.Resolve(ConfigManager.Config.StateUrl, context) ?? ConfigManager.Config.StateUrl,
 
             Assets = new Assets
             {
@@ -18,7 +21,10 @@ public static class PresenceBuilder
                 SmallImageText = PresenceResolver.Resolve(ConfigManager.Config.SmallImageText, context) ?? ConfigManager.Config.SmallImageText,
 
                 LargeImageKey = ConfigManager.Config.LargeImageKey,
-                SmallImageKey = ConfigManager.Config.SmallImageKey
+                SmallImageKey = ConfigManager.Config.SmallImageKey,
+                    
+                LargeImageUrl = PresenceResolver.Resolve(ConfigManager.Config.LargeImageUrl, context) ?? ConfigManager.Config.LargeImageUrl,
+                SmallImageUrl = PresenceResolver.Resolve(ConfigManager.Config.SmallImageUrl, context) ?? ConfigManager.Config.SmallImageUrl,
             }
         };
     }

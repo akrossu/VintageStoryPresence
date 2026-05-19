@@ -7,10 +7,15 @@
 public class PresenceConfig
 {
     public string AppId { get; set; } = "1441987315235946546";
+    public bool AppIdToggle { get; set; } = false;
     public string Details { get; set; } = "In {{GameMode}} Mode";
-    public string State { get; set; } = "Playing {{PlayerModeFormatted}}";
+    public string DetailsUrl { get; set; } = "";
+    public string State { get; set; } = "Playing {{PlayerMode}}";
+    public string StateUrl { get; set; } = "";
     public string LargeImageKey { get; set; } = "game_icon"; 
-    public string LargeImageText { get; set; } = "Large Image Text Hover";
-    public string SmallImageKey { get; set; } = "gear_icon";
-    public string SmallImageText { get; set; } = "Small Image Text Hover";
+    public string LargeImageText { get; set; } = "Vintage Story";
+    public string LargeImageUrl { get; set; } = "https://www.vintagestory.at/";
+    public string SmallImageKey { get; set; } = "temp_gear_icon";
+    public string SmallImageText { get; set; } = "Vintage Story Presence";
+    public string SmallImageUrl { get; set; } = "https://mods.vintagestory.at/vintagestorypresence";
 }
