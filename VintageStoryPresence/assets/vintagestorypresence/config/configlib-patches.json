@@ -2,78 +2,89 @@
   "version": 2,
   "settings": [
     {
-      "code": "patch-details",
+      "code": "DETAILS",
       "name": "Details",
+      "ingui": "vintagestorypresence:details",
       "type": "string",
       "default": "In {{GameMode}} Mode",
-      "comment": "patch-details-comment"
+      "comment": "details-comment"
     },
     {
-      "code": "patch-state",
+      "code": "STATE",
       "name": "State",
+      "ingui": "vintagestorypresence:state",
       "type": "string",
       "default": "Playing {{PlayerModeFormatted}}",
-      "comment": "patch-state-comment"
+      "comment": "state-comment"
     },
     {
       "type": "separator",
-      "title": "Advanced Settings"
+      "title": "Advanced Settings",
+      "ingui": "vintagestorypresence:advanced-settings-seperator"
     },
     {
-      "code": "custom-app-id-toggle",
+      "code": "CUSTOM_APP_ID_TOGGLE",
       "name": "AppIdToggle",
+      "ingui": "vintagestorypresence:custom-app-id-toggle",
       "type": "boolean",
       "default": false,
-      "comment": "Toggle on to allow custom discord application id's. If off, will use the default game application."
+      "comment": "custom-app-id-toggle-comment"
     },
     {
-      "code": "app-id",
+      "code": "APP_ID",
       "name": "AppId",
+      "ingui": "vintagestorypresence:app-id",
       "type": "string",
       "default": "1441987315235946546",
-      "comment": "patch-app-id-comment"
+      "comment": "app-id-comment"
     },
     {
-      "code": "large-image-key",
+      "code": "LARGE_IMAGE_KEY",
       "name": "LargeImageKey",
+      "ingui": "vintagestorypresence:large-image-key",
       "type": "string",
       "default": "game_icon",
-      "comment": ""
+      "comment": "large-image-key-comment"
     },
     {
-      "code": "large-image-text",
+      "code": "LARGE_IMAGE_TEXT",
       "name": "LargeImageText",
+      "ingui": "vintagestorypresence:large-image-text",
       "type": "string",
       "default": "Large Image Text Hover",
-      "comment": ""
+      "comment": "large-image-text-comment"
     },
     {
-      "code": "large-image-url",
+      "code": "LARGE_IMAGE_URL",
       "name": "LargeImageUrl",
+      "ingui": "vintagestorypresence:large-image-url",
       "type": "string",
       "default": "https://www.vintagestory.at/",
-      "comment": ""
+      "comment": "large-image-url-comment"
     },
     {
-      "code": "small-image-key",
+      "code": "SMALL_IMAGE_KEY",
       "name": "SmallImageKey",
+      "ingui": "vintagestorypresence:small-image-key",
       "type": "string",
       "default": "temp_gear_icon",
-      "comment": ""
+      "comment": "small-image-key-comment"
     },
     {
-      "code": "small-image-text",
+      "code": "SMALL_IMAGE_TEXT",
       "name": "SmallImageText",
+      "ingui": "vintagestorypresence:small-image-text",
       "type": "string",
       "default": "Small Image Text Hover",
-      "comment": ""
+      "comment": "small-image-text-comment"
     },
     {
-      "code": "small-image-url",
+      "code": "SMALL_IMAGE_URL",
       "name": "SmallImageUrl",
+      "ingui": "vintagestorypresence:small-image-url",
       "type": "string",
       "default": "https://mods.vintagestory.at/vintagestorypresence",
-      "comment": ""
+      "comment": "small-image-url-comment"
     }
   ]
 }

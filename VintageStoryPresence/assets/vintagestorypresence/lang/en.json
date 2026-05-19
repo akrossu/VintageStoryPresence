@@ -1,8 +1,29 @@
 {
-    "AppId": "Application Id",
-    "patch-app-id-comment": "Discord registered Application Id",
-    "Details": "Details",
-    "patch-details-comment": "Select from PlayerMode, ServerName, or WorldName",
-    "State": "State",
-    "patch-state-comment": "Select from PlayerState, OnlineStatus"
+    "app-id": "Application Id",
+    "app-id-comment": "Discord registered Application Id",
+    
+    "custom-app-id-toggle": "Use Custom Application Id",
+    "custom-app-id-toggle-comment": "Toggle on to allow custom discord application id's. If off, will use the default game application.",
+    
+    "details": "Application Details",
+    "details-comment": "the details comment",
+    
+    "state": "Application State",
+    "state-comment": "the state comment",
+    
+    "large-image-key": "Large Image Key",
+    "large-image-key-comment": "Image identifier for the application thumbnail",
+    "large-image-text": "Large Image Text",
+    "large-image-text-comment": "The text shown when hovering over the image",
+    "large-image-url": "Large Image Url",
+    "large-image-url-comment": "Url to redirect to when clicking on the image",
+    
+    "small-image-key": "Small Image Key",
+    "small-image-key-comment": "Image identifier for the application sub-image",
+    "small-image-text": "Small Image Text",
+    "small-image-text-comment": "The text shown when hovering over the image",
+    "small-image-url": "Small Image Url",
+    "small-image-url-comment": "Url to redirect to when clicking on the image",
+    
+    "advanced-settings-seperator": "Advanced Settings"
 }
