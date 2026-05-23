@@ -37,6 +37,6 @@ public static class PresenceUpdater
     public static void Dispose()
     {
         PresenceCore.Api.Event.UnregisterGameTickListener(_listenerId);
-        PresenceCore.Log.Debug("Game Tick Listener Disposed");
+        PresenceCore.Log.Debug("Game Tick Event Listener Disposed");
     }
 }

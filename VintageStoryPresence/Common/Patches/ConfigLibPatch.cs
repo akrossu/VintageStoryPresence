@@ -65,7 +65,8 @@ public static class ConfigLibPatch
     private static void SetCustomAppId()
     {
         DiscordRpcService.Dispose();
+        
+        // sets to the custom application id if toggled in configlib
         DiscordRpcService.InitializeDiscordRpc(ConfigManager.Config.AppId);
-        PresenceCore.Log.Warning("Set to new AppId: " + ConfigManager.Config.AppId);
     }
 }
