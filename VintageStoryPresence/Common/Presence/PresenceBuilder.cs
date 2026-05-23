@@ -1,5 +1,6 @@
 ﻿using DiscordRPC;
 using VintageStoryPresence.Common.Config;
+using VintageStoryPresence.Common.Presence.Context;
 
 namespace VintageStoryPresence.Common.Presence;
 

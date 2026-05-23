@@ -1,4 +1,4 @@
-﻿namespace VintageStoryPresence.Common.Presence;
+﻿namespace VintageStoryPresence.Common.Presence.Context;
 
 public class PresenceContext
 {
