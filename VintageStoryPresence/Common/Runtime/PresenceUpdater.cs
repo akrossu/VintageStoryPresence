@@ -15,15 +15,13 @@ public static class PresenceUpdater
     {
         _startTime = DateTime.UtcNow;
         _listenerId = PresenceCore.Api.Event.RegisterGameTickListener(UpdatePresence, 5000);
-        
-        
     }
 
     private static void UpdatePresence(float deltaTime)
     {
         try
         {
-            PresenceContext context = PresenceContextBuilder.BuildContext(deltaTime);
+            PresenceContext context = PresenceContextBuilder.BuildContext();
 
             RichPresence presence = PresenceBuilder.Build(context);
             presence.Timestamps = new Timestamps(_startTime);
@@ -39,6 +37,6 @@ public static class PresenceUpdater
     public static void Dispose()
     {
         PresenceCore.Api.Event.UnregisterGameTickListener(_listenerId);
-        PresenceCore.Log.Debug("Game Tick Listener Disposed");
+        PresenceCore.Log.Debug("Game Tick Event Listener Disposed");
     }
 }

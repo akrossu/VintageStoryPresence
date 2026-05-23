@@ -6,6 +6,7 @@
 /// </summary>
 public class PresenceConfig
 {
+    public string DefaultAppId { get; private set; } = "1441987315235946546";
     public string AppId { get; set; } = "1441987315235946546";
     public bool AppIdToggle { get; set; } = false;
     public string Details { get; set; } = "In {{GameMode}} Mode";

@@ -5,7 +5,7 @@ namespace VintageStoryPresence.Common.Presence.Context;
 
 public static class PresenceContextBuilder
 {
-    public static PresenceContext BuildContext(float delta)
+    public static PresenceContext BuildContext()
     {
         ICoreAPI? api = PresenceCore.Api;
         ICoreClientAPI? capi = PresenceCore.Capi;
@@ -23,8 +23,6 @@ public static class PresenceContextBuilder
         
         return new PresenceContext
         {
-            DeltaTime = delta,
-            
             PlayerName = "Player Name",
             
             PlayerCount = onlinePlayers.ToString(),

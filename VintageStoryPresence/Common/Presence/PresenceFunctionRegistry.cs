@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using VintageStoryPresence.Common.Presence.Context;
 
 namespace VintageStoryPresence.Common.Presence;
 
