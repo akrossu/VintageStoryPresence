@@ -2,8 +2,6 @@
 
 public class PresenceContext
 {
-    public float DeltaTime { get; set; }
-
     public string PlayerName { get; set; }
     public string PlayerCount { get; set; }
     public string PlayerCountFormatted { get; set; }
