@@ -28,8 +28,8 @@ public class VintageStoryPresenceModSystem : ModSystem
 
         // Checks when ConfigLib has enabled the AppIdToggle
         DiscordRpcService.InitializeDiscordRpc(ConfigManager.Config.AppIdToggle
-            ? ConfigManager.Config.AppId
-            : "1441987315235946546");
+            ? ConfigManager.Config.AppId // gets set to the custom application id from configlib
+            : ConfigManager.Config.DefaultAppId); // retrieves the game's official application id
 
         PresenceUpdater.Start();
     }

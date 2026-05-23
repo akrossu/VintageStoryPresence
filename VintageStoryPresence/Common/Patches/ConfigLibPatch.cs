@@ -48,7 +48,9 @@ public static class ConfigLibPatch
                     else
                     {
                         DiscordRpcService.Dispose();
-                        DiscordRpcService.InitializeDiscordRpc("1441987315235946546");                        
+                        
+                        // provides the game's official discord application id
+                        DiscordRpcService.InitializeDiscordRpc(ConfigManager.Config.DefaultAppId);                       
                     }
                     break;
             }
